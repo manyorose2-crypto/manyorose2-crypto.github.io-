@@ -1,0 +1,61 @@
+:root {
+    --primary: #8B4513; /* African earth tone */
+    --secondary: #FFD700; /* Gold */
+    --accent: #9370DB; /* Purple */
+    --text: #FFFFFF;
+    --background: #1A1A2E;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: var(--secondary);
+}
+
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    border-left: 5px solid var(--accent);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li:before {
+    content: "✓ ";
+    color: var(--secondary);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: var(--primary);
+    margin-top: 60px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    h1 { font-size: 1.8em; }
+    section { margin: 20px 10px; }
+}
